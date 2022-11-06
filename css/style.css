@@ -1,0 +1,318 @@
+@import "works.css";
+:root {
+  --primary-color: #7c19c7;
+  --size-svg: 160.15px;
+}
+* {
+  direction: rtl;
+  font-size: 1.15rem;
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+  font-family: "Cairo", sans-serif;
+  padding-top: 70px;
+}
+/* framwork */
+/* ----------------------------------------------- */
+.list-unstyled {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+/* navbar */
+/* ----------------------------------------------- */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 15px 0 15px;
+}
+.navbar .nav-item .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+}
+#navbarHeader {
+  transition: background 0.3s;
+}
+li.nav-item {
+  padding: 0 10px 0 0;
+}
+.navbar-toggler svg {
+  color: white;
+  font-size: 1.5rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-nav {
+  padding-right: 15px;
+}
+/* info-imp */
+/* ----------------------------------------------- */
+.info-imp {
+  height: calc(100vh - 56px);
+  position: relative;
+}
+.info-imp::before {
+  content: "";
+  width: 186px;
+  height: 130px;
+  top: 102px;
+  left: 96px;
+  position: absolute;
+  background-color: #ffffff2b;
+  border-radius: 50%;
+}
+.info-imp::after {
+  content: "";
+  width: 320px;
+  height: 194px;
+  bottom: -1px;
+  right: -57px;
+  position: absolute;
+  background-color: #ffffff2b;
+  border-radius: 50%;
+}
+
+.info-imp .box {
+  height: calc(100vh - var(--size-svg) - 56px);
+  background-color: var(--primary-color);
+}
+.info-imp .title {
+  margin-bottom: 13px;
+}
+.info-imp .description {
+  color: rgb(255 255 255 / 81%) !important;
+}
+
+/* componets */
+/* ------------------------------------------------- */
+.title-section {
+  margin-top: 75px;
+  font-weight: bold;
+  height: 20px;
+  margin-bottom: 50px;
+}
+.service-section .title-section {
+  margin-top: 125px;
+}
+.title-section .text {
+  position: relative;
+}
+.title-section .text::before {
+  content: "";
+  width: 5px;
+  /* height: 10px; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: var(--primary-color);
+  box-shadow: -3px 0px 4px rgb(191, 191, 191);
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing {
+}
+.section {
+}
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.service svg {
+  font-size: 120px;
+  color: var(--primary-color);
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+}
+/* works */
+/* ----------------------------------------------- */
+.work-section .work {
+}
+.box-work {
+  position: relative;
+}
+.box-work .card-title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #000000bf;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px 17px 0;
+  color: #e9e9e9;
+  text-align: start;
+  font-weight: 500;
+}
+.box-work .card-title::before {
+  content: "";
+  width: 176px;
+  height: 7px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+/* customer opinion */
+.customer-opinion {
+  height: 70vh;
+}
+.carousel {
+  width: 100%;
+}
+.carousel .carousel-inner .content-carousel {
+  width: 41%;
+  margin: auto;
+}
+.carousel-box {
+  height: 340px;
+}
+.arrow-carousel {
+  font-size: 44px;
+}
+.icon {
+  margin-top: -150px;
+  margin-bottom: 60px;
+}
+.icon svg {
+  font-size: 46px;
+  color: rgb(227 227 227);
+}
+footer {
+  background-color: #26093c;
+  color: #d7d7d7 !important;
+}
+footer .list-unstyled li a,
+footer .list-unstyled li {
+  color: #d7d7d7bf !important;
+  text-decoration: none;
+  line-height: 2;
+  transition: color 0.2s;
+}
+footer .list-unstyled li a {
+  direction: rtl !important;
+}
+footer .list-unstyled li a:hover,
+footer .list-unstyled li:hover {
+  color: #d7d7d7f4 !important;
+}
+footer .list-unstyled li svg {
+  font-size: 20px;
+}
+footer .list-unstyled li .icon-social-media {
+  position: relative;
+  padding-left: 11px;
+  width: 30px;
+  display: inline-block;
+  margin-left: 9px;
+}
+footer .list-unstyled li .icon-social-media::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  bottom: 6px;
+  width: 2px;
+  border-radius: 12px;
+  background-color: rgb(155 155 155 / 62%);
+}
+.box-message {
+ 
+}
+.box-message .box-form {
+  margin: 50px 200px;
+}
+.box-message .box-form .form-cont {
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+  border: 3px solid #7c19c757;
+  border-radius: 5px;
+  line-height: 2.2;
+  padding-right: 7px;
+  resize: none;
+  /* border-r */
+}
+.box-message .box-form .form-cont:focus {
+  outline: none;
+  transition: border-color .3s ease-in;
+  border-color: var(--primary-color)
+}
+.box-message .btn-us{
+  background-color: var(--primary-color) !important;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #7c19c7ca;
+  font-size: 1.2rem;
+}
+.box-message .btn-us:hover{
+  background-color: #5f1299 !important;
+  transition: background-color .2s ease-in;
+}
+.box-message .btn-us:focus{
+  background-color: #5f1299 !important;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --size-svg: 100px;
+  }
+  .carousel .carousel-inner .content-carousel {
+    width: 60%;
+  }
+  
+}
